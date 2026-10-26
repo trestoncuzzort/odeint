@@ -1,0 +1,47 @@
+name: FSAL out-of-place standalone validation
+on:
+  push:
+    branches: [validation/fsal-out-of-place]
+permissions:
+  contents: read
+jobs:
+  regression:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-24.04
+            compiler: gcc11
+          - os: ubuntu-24.04
+            compiler: clang-sanitized
+          - os: macos-14
+            compiler: clang
+          - os: windows-2022
+            compiler: msvc
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: e72b242592a546ea33496a6262af5a4e9f6b89bf
+          path: fixed
+      - uses: actions/checkout@v4
+        with:
+          ref: efa150fb027847c3d85b2ffb9e5e0056ea358383
+          path: original
+      - uses: ilammy/msvc-dev-cmd@v1
+        if: runner.os == 'Windows'
+      - name: Install GCC 11
+        if: matrix.compiler == 'gcc11'
+        run: sudo apt-get update && sudo apt-get install -y g++-11
+      - name: Validate pinned original, alias control and fixed source
+        env:
+          VALIDATION_COMPILER: ${{ matrix.compiler }}
+        run: python validation/fsal.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fsal-${{ matrix.os }}-${{ matrix.compiler }}
+          path: validation-output/
+          if-no-files-found: error
+

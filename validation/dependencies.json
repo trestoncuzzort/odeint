@@ -1,0 +1,122 @@
+[
+  {
+    "module": "libs/numeric/odeint",
+    "repository": "boostorg/odeint",
+    "head": "efa150fb027847c3d85b2ffb9e5e0056ea358383",
+    "owner": true
+  },
+  {
+    "module": "libs/core",
+    "repository": "boostorg/core",
+    "head": "177a1c61748a61a03aaa1d4ec696f81625e66cff",
+    "owner": false
+  },
+  {
+    "module": "libs/assert",
+    "repository": "boostorg/assert",
+    "head": "612d35df55376c6412f0477ed62d4d241f8861b7",
+    "owner": false
+  },
+  {
+    "module": "libs/config",
+    "repository": "boostorg/config",
+    "head": "369d933b53ee985543a81c0329c57c86de121755",
+    "owner": false
+  },
+  {
+    "module": "libs/type_traits",
+    "repository": "boostorg/type_traits",
+    "head": "e6275ccf01c9cf8775ef0cb6188bd58f3b167a0f",
+    "owner": false
+  },
+  {
+    "module": "libs/range",
+    "repository": "boostorg/range",
+    "head": "7481e429b023655a6e77799d5f2cf4788145d494",
+    "owner": false
+  },
+  {
+    "module": "libs/concept_check",
+    "repository": "boostorg/concept_check",
+    "head": "235e54ebf23be678045e0eeae90f47ca0e2c95ce",
+    "owner": false
+  },
+  {
+    "module": "libs/preprocessor",
+    "repository": "boostorg/preprocessor",
+    "head": "cd1b1bd03900b68505822cfa25cb16851bd6caf1",
+    "owner": false
+  },
+  {
+    "module": "libs/mpl",
+    "repository": "boostorg/mpl",
+    "head": "9d1f81ffeb055ea1ce0d96370bf07c40a2843878",
+    "owner": false
+  },
+  {
+    "module": "libs/iterator",
+    "repository": "boostorg/iterator",
+    "head": "9340e6ebdf17e487faf990b9d2ec7abd6cbac180",
+    "owner": false
+  },
+  {
+    "module": "libs/mp11",
+    "repository": "boostorg/mp11",
+    "head": "0daffd6401724ddf473fd39d28f68e138d9a1303",
+    "owner": false
+  },
+  {
+    "module": "libs/utility",
+    "repository": "boostorg/utility",
+    "head": "c3f5f523dead32e1a1bbc92b1c1864d713ec16ea",
+    "owner": false
+  },
+  {
+    "module": "libs/fusion",
+    "repository": "boostorg/fusion",
+    "head": "017a8399fd62e81cf11ecea8c4063d055088458e",
+    "owner": false
+  },
+  {
+    "module": "libs/function_types",
+    "repository": "boostorg/function_types",
+    "head": "0f9a7a9409c61fbe4d5217e94d1c6ec670c13b6b",
+    "owner": false
+  },
+  {
+    "module": "libs/detail",
+    "repository": "boostorg/detail",
+    "head": "be38ccb0c1f8d321877170df22dcf0d41af1d3cc",
+    "owner": false
+  },
+  {
+    "module": "libs/units",
+    "repository": "boostorg/units",
+    "head": "f39b667d7803a6428d869c0087d92128b1212685",
+    "owner": false
+  },
+  {
+    "module": "libs/typeof",
+    "repository": "boostorg/typeof",
+    "head": "06748a1d65182a2dacfb9e0aa5dfc6230353b66d",
+    "owner": false
+  },
+  {
+    "module": "libs/integer",
+    "repository": "boostorg/integer",
+    "head": "761179e7a5ec2945367fc83d3ec9f7b3c512c712",
+    "owner": false
+  },
+  {
+    "module": "libs/numeric/ublas",
+    "repository": "boostorg/ublas",
+    "head": "12034976d0d66030a0dfc8d61dab82d99a5e7ba0",
+    "owner": false
+  },
+  {
+    "module": "libs/serialization",
+    "repository": "boostorg/serialization",
+    "head": "9778f4594b8cc458f31052f28caedea26aa04cc1",
+    "owner": false
+  }
+]
